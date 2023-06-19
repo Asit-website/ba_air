@@ -13,6 +13,8 @@
 }
 .og22{
   position: relative;
+  width: fit-content;
+  margin: auto;
 }
 .og{
   padding-top: 130px;
@@ -142,7 +144,7 @@ background: transparent;
   display: none ;
 }
 .drawer-on2{
-  display: block ;
+  display: none !important;
   transform: none !important;
     box-shadow: var(--bs-drawer-box-shadow) !important;
     transition: transform .3s ease-in-out!important;
