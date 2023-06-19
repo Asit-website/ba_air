@@ -4,3 +4,11 @@
 .dragsa .dropzone{
     width: 615px;
 }
+.spoint{
+    width: fit-content;
+    position: absolute;
+    right: 0px;
+}
+.add-textarea{
+    position: relative;
+}
