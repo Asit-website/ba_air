@@ -287,7 +287,7 @@
                   </span>
                 </div>
                 <!-- ==============btn-add-column============= -->
-                <div id="aks"  class="menu-item menu-item2 btn-add-column">
+                <div id="aks" class="menu-item menu-item2 btn-add-column">
                   <span data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-original-title="Page Settings"
                     class="menu-link">
                     <span class="menu-icon">
@@ -355,8 +355,9 @@
 
                 <!-- ==============rightSidebar============ -->
                 <div style="z-index: 109;" class="drawer-overlay-back drawer-overlay-back1"></div>
-                
-                <div id="akg"class="popup-render-items bg-body drawer drawer-end  w-xl-400px w-lg-450px drawer-on drawer-on1 drawer-on2">
+
+                <div id="akg"
+                  class="popup-render-items bg-body drawer drawer-end  w-xl-400px w-lg-450px drawer-on drawer-on1 drawer-on2">
                   <form id="form-render-items" method="post" class="card w-100 border-0 rounded-0">
                     <!-- head -->
                     <div class="card-header card-header1  pe-5 rounded-0">
@@ -880,6 +881,21 @@
       var valueWithPercentage = value + "%";
       input.value = valueWithPercentage;
     }
+
+    var myDropzone = new Dropzone("#kt_ecommerce_add_product_media", {
+      url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
+      paramName: "file", // The name that will be used to transfer the file
+      maxFiles: 10,
+      maxFilesize: 10, // MB
+      addRemoveLinks: true,
+      accept: function (file, done) {
+        if (file.name == "wow.jpg") {
+          done("Naha, you don't.");
+        } else {
+          done();
+        }
+      }
+    });
   </script>
 
   <script>
